@@ -34,10 +34,9 @@
         }
         .home{
             display:grid;
-            grid-template-columns:350px;
-            grid-template-rows:350px;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            justify-items:center;
             gap:20px;
-            position:relative;
             
         }
         #h1{
@@ -169,6 +168,30 @@
             background:black;
             
         }
+        img{
+            width:100%;
+            heidht:auto;
+            border-radius:10px;
+            box-shadow:0px 2px 9px black;
+            border:1px solid black;}
+        
+        @media(max-width:600px){
+            header{
+                    fontsize:22px;
+                }
+            nav{
+                flex-direction:column;
+                gap:10px;
+                text-align:center;
+            }
+            #h5{
+                fontsixe:40px;
+            }
+            main{
+                padding:5px;
+            }
+        }
+                
     </style>
 </head>
 <body>
@@ -266,4 +289,5 @@
         </footer>
     </main>
 </body>
+
 </html>
